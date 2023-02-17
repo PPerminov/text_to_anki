@@ -148,9 +148,9 @@ if __name__ == "__main__":
     group = argumenter.add_mutually_exclusive_group(required=True)
     group.add_argument("--srt_file", default=None, help="if this one is used then it will be parsed as SRT file")
     group.add_argument("--text_file", help="if this one is used then it will be parsed as generic text file")
+    argumenter.add_argument("--name", required=True, help="project name")
     argumenter.add_argument("--src_lng", default="sv")
     argumenter.add_argument("--dst_lng", default="en")
-    argumenter.add_argument("--name", help="project name")
     argumenter.add_argument("--output",
                             default=os.path.dirname(__file__),
                             help="folder to output anki file to. "
