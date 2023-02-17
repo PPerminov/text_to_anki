@@ -6,7 +6,10 @@ import re
 import random
 from nltk.tokenize import sent_tokenize, word_tokenize
 import pysrt
+import nltk
 
+# Probably 'all' is not needed here. But it wil ldefinitely download everything whats needed
+nltk.download('all')
 
 def import_str(x):
     text_list = []
